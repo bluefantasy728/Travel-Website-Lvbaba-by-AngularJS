@@ -19,7 +19,7 @@ module('core.trip').
 factory('GetImage', function(){
     return {
         getImageUrl:function(id){
-            var letter = id.substring(0,2);
+            var letter = id.substring(0,2).toLowerCase();
             return './image/'+ letter +'/'+ id +'_01.jpg'
         }
     };
