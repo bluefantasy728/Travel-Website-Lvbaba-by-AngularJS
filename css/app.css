@@ -1,0 +1,267 @@
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+body,h3{
+	font-family: Microsoft Yahei;
+}
+html,body,ul{
+	height: 100%;
+	padding:0;
+	margin:0;;
+}
+body{
+	background: url(../image/bg.jpg) no-repeat fixed;
+	background-size: cover;
+    overflow-y: scroll;
+}
+
+a{
+	color: #333;
+	cursor: pointer;
+}
+td{
+    cursor: pointer;
+}
+
+ul{
+	list-style: none;
+}
+.table-hover>tbody>tr:hover{
+	background: rgba(245, 245, 245, 0.7);
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.clearfix{
+	*zoom: 1;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+	vertical-align: middle;
+}
+#cover{
+	width: 100%;height: 100%;
+	background-color: rgba(1,1,1,0.1);
+}
+.wrap-outer{
+
+}
+.nav, .pagination, .carousel, .panel-title a {
+    cursor: pointer;
+}
+.gridStyle {
+    border: 1px solid rgb(212, 212, 212);
+    height: 300px
+}
+.pt100{
+	padding-top: 100px;
+}
+.pt20{
+    padding-top: 20px;
+}
+.mt20{
+	margin-top: 20px;
+}
+.ml20{
+	margin-left: 20px;
+}
+.pa{
+    position: absolute;
+}
+.pr{
+    position: relative;
+}
+
+.filter70{
+	background-color:rgba(245, 245, 245, 0.7);
+}
+.filter80{
+	background-color:rgba(245, 245, 245, 0.8);
+}
+.bg-table{
+	background-color:rgba(231,247,255, 0.8);
+}
+.no-padding-right{
+	padding-right: 0;
+}
+.img-table{
+	width: 120px;
+}
+.activeThumb{
+    border:2px solid deeppink;
+}
+
+/*登录页*/
+#login{
+	padding:100px 0 0 0;
+}
+#username,#password{
+    margin-bottom: 15px;
+}
+#login small{
+    top:40px;
+    color: deeppink;
+}
+.ng-invalid{
+	border-color: deeppink;
+}
+/*购物车弹层*/
+.navbar{
+	position: relative;
+}
+.cart-pop{
+	position: absolute;
+	border:1px solid black;
+	top:48px;
+    right:0;
+	width:300px;
+    background: ghostwhite;
+	z-index: 2;
+}
+
+/*Detail*/
+#cover2{
+	width: 100%;height: 100%;
+	background-color: rgba(231,247,255, 0.8);
+}
+#trip-content{
+	width:85%;
+	margin:0 auto;
+}
+#trip-content p{
+	margin:20px auto;
+}
+#trip-content .start-date{
+	padding-left: 5px;
+	color: dodgerblue;
+	font-size:20px;
+}
+#trip-content .trip-price, #trip-content .trip-sum{
+	color: deeppink;
+	padding-right: 10px;
+	font-size:26px;
+}
+#trip-content .trip-side{
+	margin-left: 450px;
+}
+#trip-content .button-group{
+	margin-top: 20px;
+}
+.trip:first-child {
+	display: block;
+}
+
+.trip-images {
+	float: left;
+	margin:0 20px 20px 20px;
+	position: relative;
+	width: 400px;
+}
+.trip-title,.trip-article{
+	margin:0 20px 20px 0;
+}
+.trip-thumbs {
+	list-style: none;
+	margin: 0;
+}
+.trip-thumbs img {
+	padding: 5px;
+	width: 110px;
+
+}
+.trip-thumbs li {
+	background-color: white;
+	border: 1px solid black;
+	cursor: pointer;
+	display: inline-block;
+	margin: 5px auto;
+    box-sizing: border-box;
+}
+#trip-content .errorQty{
+    color: darkmagenta;
+    margin: 0;
+    width:300px;
+    text-indent:50px;
+}
+.cartObj{
+    width: 30px;
+    height:30px;
+    border-radius:50%;
+    background: #337ab7;
+    opacity:0.5;
+    top:0;
+    left:0;
+}
+/*整体页面切换动画*/
+.animate-wrap{transition:1s all}
+
+.view-container {
+    position: relative;
+}
+.animate-wrap.ng-enter,
+.animate-wrap.ng-leave {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.animate-wrap.ng-enter {
+    animation: 1s fade-in;
+    z-index: 100;
+}
+
+.animate-wrap.ng-leave {
+    animation: 1s fade-out;
+    z-index: 99;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+/*列表动画*/
+/* Animate `ngRepeat` in `phoneList` component */
+.trip-list-item.ng-enter,
+.trip-list-item.ng-leave,
+.trip-list-item.ng-move {
+    overflow: hidden;
+    transition: 0.3s linear all;
+}
+
+.trip-list-item.ng-enter,
+.trip-list-item.ng-leave.ng-leave-active,
+.trip-list-item.ng-move {
+    height: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.trip-list-item.ng-enter.ng-enter-active,
+.trip-list-item.ng-leave,
+.trip-list-item.ng-move.ng-move-active {
+    height: 60px;
+    margin-bottom: 20px;
+    opacity: 1;
+    padding-bottom: 4px;
+    padding-top: 15px;
+}

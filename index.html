@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="tripApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="framework/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css">
+    <script src="framework/jquery/dist/jquery.min.js"></script>
+    <script src="framework/angular/angular.min.js"></script>
+    <script src="framework/angular-animate/angular-animate.min.js"></script>
+    <script src="framework/angular-resource/angular-resource.min.js"></script>
+    <script src="framework/angular-route/angular-route.min.js"></script>
+    <script src="framework/angular-local-storage.min.js"></script>
+
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="core/core.module.js"></script>
+    <script src="core/trip/trip.module.js"></script>
+    <script src="core/trip/trip.service.js"></script>
+    <script src="component/login/login.module.js"></script>
+    <script src="component/login/login.component.js"></script>
+    <script src="component/tripList/tripList.module.js"></script>
+    <script src="component/tripList/tripList.component.js"></script>
+    <script src="component/tripDetail/tripDetail.module.js"></script>
+    <script src="component/tripDetail/tripDetail.component.js"></script>
+    <script src="component/shopCart/shopCart.module.js"></script>
+    <script src="component/shopCart/shopCart.component.js"></script>
+
+</head>
+
+<body>
+<div id="cover" class="view-container ">
+
+    <div ng-view class="animate-wrap"></div>
+ </div>
+</body>
+
+</html>

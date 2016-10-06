@@ -1,0 +1,17 @@
+[{
+    "tripID":"AU001",
+    "name": "澳大利亚凯恩斯墨尔本9晚11日全景游",
+    "img":"",
+    "continent":"澳洲",
+    "country":"澳大利亚",
+    "startTime": "2016-10-22",
+    "price":"11688"
+}, {"tripID":"AU002",
+    "name": "新西兰南北岛11晚14日游",
+    "img":"",
+    "continent":"澳洲",
+    "country":"新西兰",
+    "startTime": "2016-11-08",
+    "price":"22000"
+}
+]

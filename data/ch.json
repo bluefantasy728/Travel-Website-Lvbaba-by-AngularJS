@@ -1,0 +1,31 @@
+[{
+    "tripID":"CH001",
+    "name": "九寨沟4天3晚自由行",
+    "img":"",
+    "continent":"亚洲",
+    "country":"中国",
+    "startTime": "2016-11-01",
+    "price":"3500"
+}, {"tripID":"CH002",
+    "name": "江南游3天2晚自由行",
+    "img":"",
+    "continent":"亚洲",
+    "country":"中国",
+    "startTime": "2016-11-15",
+    "price":"2200"
+},{"tripID":"CH003",
+    "name": "厦门鼓浪屿土楼双飞5天4晚",
+    "img":"",
+    "continent":"亚洲",
+    "country":"中国",
+    "startTime": "2016-12-12",
+    "price":"2600"
+},{"tripID":"CH004",
+    "name": "黄山3日巴士跟团游",
+    "img":"",
+    "continent":"亚洲",
+    "country":"中国",
+    "startTime": "2016-10-12",
+    "price":"608 "
+} 
+]

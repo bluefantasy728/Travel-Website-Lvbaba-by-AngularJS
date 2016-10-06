@@ -1,0 +1,38 @@
+<div id="login" class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="panel panel-default filter70">
+                <div class="panel-heading" style="text-align:center">
+                    <div class="panel-title">驴爸爸旅游网登录系统</div>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal" novalidate name="loginForm" ng-submit="mySubmit($event)">
+                        <div class="form-group">
+                            <label for="username" class="col-md-3 control-label no-padding-right">
+                                用户名：
+                            </label>
+                            <div class="col-md-8 pr">
+                                <input id="username" autocomplete="off" name="username" type="text" class="form-control" placeholder="请输入用户名(4-15位字符)" required ng-minlength="4" ng-maxlength="15" ng-model="$ctrl.signInfo.username">
+                                <small class="pa" ng-show="loginForm.username.$dirty && loginForm.username.$invalid">用户名为4到15个字符</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-md-3 control-label no-padding-right">
+                                密码：
+                            </label>
+                            <div class="col-md-8">
+                                <input id="password" name="password" type="password" class="form-control"  required placeholder="请输入密码" ng-model="$ctrl.signInfo.pass">
+                                <small class="pa" ng-show="loginForm.password.$dirty && loginForm.password.$invalid">请输入密码</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-8">
+                                <a href="#!/trips" style="width:100px" class="btn btn-primary" ng-disabled="false" ng-click="$ctrl.mySubmit($event)">登录</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

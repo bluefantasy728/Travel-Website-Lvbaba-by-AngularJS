@@ -1,0 +1,24 @@
+[{
+    "tripID":"AS001",
+    "name": "日本本州5晚6日游（安排1晚温泉，大阪、东京、奈良）",
+    "img":"",
+    "continent":"亚洲",
+    "country":"日本",
+    "startTime": "2016-11-02",
+    "price":"4900"
+}, {"tripID":"AS002",
+    "name": "韩国首尔3晚4日半自助游",
+    "img":"",
+    "continent":"亚洲",
+    "country":"韩国",
+    "startTime": "2016-11-03",
+    "price":"2200"
+}, {"tripID":"AS003",
+    "name": "长滩岛4晚5日自由行，宿务太平洋包",
+    "img":"",
+    "continent":"亚洲",
+    "country":"菲律宾",
+    "startTime": "2016-11-18",
+    "price":"2100"
+}
+]

@@ -1,0 +1,45 @@
+<div id="shop-cart" class="container pt20">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="panel panel-default filter70">
+                <div class="panel-heading" style="text-align:center">
+                    <div class="panel-title"><h3>购物车结账页面</h3></div>
+                    <a href="#!/trips" class="btn btn-info">返回继续选线路</a>
+                    <a ng-click="$ctrl.clearCart()" class="btn btn-danger">清空购物车</a>
+                </div>
+                <div class="panel-body">
+                    <table class="table bg-table table-hover">
+                        <thead>
+                            <tr>
+                                <th width="8%">编号</th>
+                                <th width="15%" style="text-align: center">图例</th>
+                                <th style="text-align: center">描述</th>
+                                <th width="15%">出发日期</th>
+                                <th width="10%">价格(RMB)</th>
+                                <th width="8%">人数</th>
+                                <th width="10%">小计(RMB)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in $ctrl.cartData" class="trip-list-item">
+                                <td>{{item.tripID}}</td>
+                                <td><img ng-src="{{item.img}}" class="img-table" style="width: 80px;" /></td>
+                                <td>{{item.name}}</td>
+                                <td>{{item.startTime}}</td>
+                                <td>{{item.price|number}}</td>
+                                <td>{{item.tripQty}}</td>
+                                <td>{{item.tripQty*item.price|number}}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: right"></td>
+                                <td colspan="5" style="text-align: right"><h4>总计：<span style="color: deeppink;font-size: 24px">{{$ctrl.getSum()|number}}</span></h4></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>

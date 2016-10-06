@@ -1,0 +1,89 @@
+
+<!--导航条-->
+<nav class="navbar navbar-default filter80">
+    <div class="container">
+        <!--小屏幕时候的logo和菜单按钮-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand"><strong>欢迎使用驴爸爸旅游网</strong></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#!/index"><i class="iconfont">&#xe62c;</i>&nbsp;&nbsp;登录/退出</a></li>
+                <li class="cart-btn">
+                    <a href="#!/shopcart" ng-mouseenter="$ctrl.popShow(true)" ng-mouseleave="$ctrl.popShow(false)" ng-style="$ctrl.ifHasCartStyle"><i class="iconfont">&#xe622;</i>&nbsp;&nbsp;购物车
+                        <div class="cart-pop" ng-show="$ctrl.ifPopShow">
+                            <table class="table table-hover">
+                                <tbody>
+                                <tr ng-repeat="item in $ctrl.cartData">
+                                    <td><a href="#!/shopcart">{{item.name}}</a></td>
+                                    <td width="30%">￥: {{item.price}}</td>
+                                    <td width="15%">x {{item.tripQty}}</td>
+                                </tr>
+                                <tr >
+                                    <td colspan="5" style="text-align: right">共计<span style="color: deeppink;padding: 5px">{{$ctrl.getSum()}}</span>元</td>
+                                </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </a>
+                </li>
+        </div>
+    </div>
+</nav>
+<!--导航条-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <form class="form-inline" role="form">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">请选择不同的游行线路</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="list-group">
+                            <a class="list-group-item" ng-click="$ctrl.filterTrip('all')">全部路线</a>
+                            <a class="list-group-item" ng-click="$ctrl.filterTrip('ch')">境内游</a>
+                            <a class="list-group-item" ng-click="$ctrl.filterTrip('as')">亚洲境外游</a>
+                            <a class="list-group-item" ng-click="$ctrl.filterTrip('am')">美洲游</a>
+                            <a class="list-group-item" ng-click="$ctrl.filterTrip('eu')">欧洲游</a>
+                            <a class="list-group-item" ng-click="$ctrl.filterTrip('au')">澳洲游</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-9">
+            <table class="table bg-table table-hover">
+                <thead>
+                <tr>
+                    <th width="8%">编号</th>
+                    <th width="15%" style="text-align: center">图例</th>
+                    <th style="text-align: center">描述</th>
+                    <th width="10%">洲/地区</th>
+                    <th width="13%">国家</th>
+                    <th width="15%">出发日期</th>
+                    <th width="10%">价格(RMB)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="item in $ctrl.trips" class="trip-list-item">
+                    <td>{{item.tripID}}</td>
+                    <td><a href="#!/trips/{{item.tripID}}"><img ng-src="{{$ctrl.getImageUrl(item.tripID)}}" class="img-table" /></a></td>
+                    <td><a href="#!/trips/{{item.tripID}}">{{item.name}}</a></td>
+                    <td>{{item.continent}}</td>
+                    <td>{{item.country}}</td>
+                    <td>{{item.startTime}}</td>
+                    <td>{{item.price | number}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

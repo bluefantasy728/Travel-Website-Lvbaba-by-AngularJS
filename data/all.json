@@ -1,0 +1,105 @@
+[{
+    "tripID":"AM001",
+    "name": "加拿大东部6晚8日深度游",
+    "img":"",
+    "continent":"美洲",
+    "country":"加拿大",
+    "startTime": "2016-11-03",
+    "price":"14699"
+}, {"tripID":"AM002",
+    "name": "美国东西海岸9晚11日游",
+    "img":"",
+    "continent":"美洲",
+    "country":"美国",
+    "startTime": "2016-11-09",
+    "price":"10999"
+},{
+    "tripID":"AS001",
+    "name": "日本本州5晚6日游（安排1晚温泉，大阪、东京、奈良）",
+    "img":"",
+    "continent":"亚洲",
+    "country":"日本",
+    "startTime": "2016-11-02",
+    "price":"4900"
+}, {"tripID":"AS002",
+    "name": "韩国首尔3晚4日半自助游",
+    "img":"",
+    "continent":"亚洲",
+    "country":"韩国",
+    "startTime": "2016-11-03",
+    "price":"2200"
+}, {"tripID":"AS003",
+    "name": "长滩岛4晚5日自由行，宿务太平洋包",
+    "img":"",
+    "continent":"亚洲",
+    "country":"菲律宾",
+    "startTime": "2016-11-18",
+    "price":"2100"
+},{
+    "tripID":"AU001",
+    "name": "澳大利亚凯恩斯墨尔本9晚11日全景游",
+    "img":"",
+    "continent":"澳洲",
+    "country":"澳大利亚",
+    "startTime": "2016-10-22",
+    "price":"11688"
+}, {"tripID":"AU002",
+    "name": "新西兰南北岛11晚14日游",
+    "img":"",
+    "continent":"澳洲",
+    "country":"新西兰",
+    "startTime": "2016-11-08",
+    "price":"22000"
+},{
+    "tripID":"CH001",
+    "name": "九寨沟4天3晚自由行",
+    "img":"",
+    "continent":"亚洲",
+    "country":"中国",
+    "startTime": "2016-11-01",
+    "price":"3500"
+}, {"tripID":"CH002",
+    "name": "江南游3天2晚自由行",
+    "img":"",
+    "continent":"亚洲",
+    "country":"中国",
+    "startTime": "2016-11-15",
+    "price":"2200"
+},{"tripID":"CH003",
+    "name": "厦门鼓浪屿土楼双飞5天4晚",
+    "img":"",
+    "continent":"亚洲",
+    "country":"中国",
+    "startTime": "2016-12-12",
+    "price":"2600"
+},{"tripID":"CH004",
+    "name": "黄山3日巴士跟团游",
+    "img":"",
+    "continent":"亚洲",
+    "country":"中国",
+    "startTime": "2016-10-12",
+    "price":"608 "
+},{
+    "tripID":"EU001",
+    "name": "意大利12日游(一价全包 品质酒店 卡布里岛) ",
+    "img":"",
+    "continent":"欧洲",
+    "country":"意大利",
+    "startTime": "2016-10-20",
+    "price":"11750"
+}, {"tripID":"EU002",
+    "name": "德国11日经典游(品质酒店，楚格峰、新天鹅堡)",
+    "img":"",
+    "continent":"欧洲",
+    "country":"德国",
+    "startTime": "2016-11-25",
+    "price":"15005"
+}, {"tripID":"EU003",
+    "name": "芬兰一地8晚10日深度游(一价全包，20人小团，桑普号破冰船，圣诞)",
+    "img":"",
+    "continent":"欧洲",
+    "country":"芬兰",
+    "startTime": "2016-12-15",
+    "price":"42005"
+}
+]

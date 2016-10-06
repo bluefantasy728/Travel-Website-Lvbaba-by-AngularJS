@@ -1,0 +1,17 @@
+[{
+    "tripID":"AM001",
+    "name": "加拿大东部6晚8日深度游",
+    "img":"",
+    "continent":"美洲",
+    "country":"加拿大",
+    "startTime": "2016-11-03",
+    "price":"14699"
+}, {"tripID":"AM002",
+    "name": "美国东西海岸9晚11日游",
+    "img":"",
+    "continent":"美洲",
+    "country":"美国",
+    "startTime": "2016-11-09",
+    "price":"10999"
+}
+]
