@@ -26,7 +26,7 @@ angular.
                     self.price = self.tripInfo.price;
 
                     self.getImageUrl = function (num) { //设置选项卡的三张图片的地址
-                        var letter = tripID.substring(0, 2);
+                        var letter = tripID.substring(0, 2).toLowerCase();
                         return './image/' + letter + '/' + tripID + '_0' + num + '.jpg';
                     };
 
